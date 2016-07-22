@@ -4302,10 +4302,16 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    padding: 0
+    padding: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    color: rgb(255, 255, 255)
+    color: #fff;
+    font-size:18px;
+    font-weight: bold;   
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
     height: 6px;
