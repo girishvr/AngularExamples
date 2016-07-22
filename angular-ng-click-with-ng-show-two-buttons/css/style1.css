@@ -4305,12 +4305,12 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     padding: 0;
     font-weight: bold;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-family: sans-serif;
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    color: #fff;
-    font-size:18px;
+    color: #E0DBDB;
+    font-size:17px;
     font-weight: bold;   
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
