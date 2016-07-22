@@ -2,7 +2,9 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
         <script src="js/prefixfree.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
@@ -293,8 +295,23 @@
 
           </div>
         </section>
-        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-          <div class="page-content"><!-- Your content goes here --></div>
+        <section ng="showme2" class="mdl-layout__tab-panel" id="fixed-tab-3">
+          <div class="page-content">
+
+
+<div id="map" style="width:1080px;height:480px;top:40px;margin:0 auto"></div>
+
+<script>
+var mapCanvas = document.getElementById("map");
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+}
+var map = new google.maps.Map(mapCanvas, mapOptions);
+</script>
+
+
+
+          </div>
         </section>
       </main>
     </div>
