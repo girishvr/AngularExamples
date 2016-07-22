@@ -4309,7 +4309,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     font-family: sans-serif;
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    color: #E0DBDB;
+    color: #F4C7CA;/*selected color light red*/
     font-size:17px;
     font-weight: bold;   
 }
