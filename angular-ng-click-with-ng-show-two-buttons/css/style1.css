@@ -4305,7 +4305,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     padding: 0
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
     height: 6px;
