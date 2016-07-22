@@ -8,7 +8,8 @@
 #cc-slider {
 	text-align: center;
 	margin: 0 auto;
-	max-width: 850px;
+	/*max-width: 850px;*/
+	/*height:400px;*/
 }
 
 #cc-slider input {
@@ -94,7 +95,8 @@
 #slide5:checked ~ #controls label:nth-child(1) {
 	background: url('../images/next.png') no-repeat;
 	float: right;
-	margin: 0 10px 0 0;
+	/*margin: 0 10px 0 0;*/
+	margin-top: -550px;
 	display: block;
 	background-color:#ef023f;
 }
@@ -107,8 +109,11 @@
 #slide5:checked ~ #controls label:nth-child(4) {
 	background: url('../images/prev.png') no-repeat;
 	float: left;
-	margin: 0 0 0 17px;
+	/*margin: 0 0 0 17px;*/
+	margin-top: -550px;
+	margin-left: -1080px;
 	display: block;
+
 	background-color:#ef023f;
 }
 
