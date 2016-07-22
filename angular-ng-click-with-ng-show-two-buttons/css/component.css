@@ -33,12 +33,12 @@
 
 
 #overflow {
-	width: 100%;
+	/*width: 100%;*/
 	overflow: hidden;
 }
 
 #cc-slides article img {
-	width: 100%;
+	/*width: 100%;*/
 }
 
 #cc-slides .inner {
@@ -93,12 +93,12 @@
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(5), 
 #slide5:checked ~ #controls label:nth-child(1) {
-	background: url('../images/next.png') no-repeat;
+	background: url('next.png') no-repeat;
 	float: right;
 	/*margin: 0 10px 0 0;*/
 	margin-top: -550px;
 	display: block;
-	background-color:#ef023f;
+	/*background-color:#ef023f;*/
 }
 
 
@@ -107,14 +107,14 @@
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3),
 #slide5:checked ~ #controls label:nth-child(4) {
-	background: url('../images/prev.png') no-repeat;
+	background: url('prev.png') no-repeat;
 	float: left;
 	/*margin: 0 0 0 17px;*/
 	margin-top: -550px;
 	margin-left: -1080px;
 	display: block;
 
-	background-color:#ef023f;
+	/*background-color:#ef023f;*/
 }
 
 
