@@ -59,12 +59,13 @@ table{
 
 }
 th{
-	background-color: gray;
+	background-color: #E0E0E0;
+	border-right: 1px solid #C0C0C0;
 
 
 }
 td{
-	border-bottom:1px solid #E8E8E8;
+	/*border-bottom:1px solid #E8E8E8;*/
 }
 button{
 	color:white ;
@@ -73,11 +74,15 @@ button{
 .button1{
 /*	margin-left: 40px;*/
 }
+.scrollit {
+    overflow:scroll;
+    height:100px;
+}
   </style>
   </head>
   <body>
 
-  <div class="container"  style="border-top:2px solid gray;border-bottom:2px solid gray">
+  <div class="container"  style="border-top:2px solid #E0E0E0;border-bottom:2px solid #E0E0E0">
     <div class="mdl-grid" style="margin-top:20px">
       <div class="mdl-cell mdl-cell--4-col first">
       	<img id="img1" src="apartments.jpg"></img>
@@ -121,8 +126,10 @@ button{
       <th>New price</th>
     </tr>
   </thead>
+
+
   <tbody>
-    <tr>
+	<tr>
       <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
       <td>814.00 sq. ft</td>
       <td>Rs. 2700/sq. ft</td>
@@ -141,6 +148,7 @@ button{
       <td>Rs. 22.55 Lacs</td>
     </tr>
   </tbody>
+
 </table>
 
       </div>

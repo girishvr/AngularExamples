@@ -2782,9 +2782,9 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     position: relative;
     height: 48px;
     border-top: 1px solid rgba(0, 0, 0, .12);
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    /*border-bottom: 1px solid rgba(0, 0, 0, .12);*/
     padding: 12px 18px;
-    box-sizing: border-box
+    /*box-sizing: border-box*/
 }
 .mdl-data-table td,
 .mdl-data-table td .mdl-data-table__select {
