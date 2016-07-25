@@ -6,6 +6,117 @@
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
+
+    <script type="text/javascript" src="detail_view/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="detail_view/js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+
+    $( document ).ready(function() {
+    
+              /*alert(screen.width);*/
+              var div1 = document.getElementById("jssor_1");
+              var div2 = document.getElementById("slides_1");
+              div1.style.width = screen.width+20+"px";
+              div2.style.width = screen.width+20+"px";
+
+
+               if(screen.width > 1500 && screen.width <= 2000){
+                div1.style.height = 760+"px";
+                div2.style.height = 550+"px";
+                document.getElementById("slides_1").style.marginTop = "90px";
+              }
+
+              if(screen.width > 1400 && screen.width <= 1500){
+                div1.style.height = 760+"px";
+                div2.style.height = 550+"px";
+                document.getElementById("slides_1").style.marginTop = "86px";
+              }
+              if(screen.width <= 1400){
+                div1.style.height = 660+"px";
+                div2.style.height = 500+"px";
+                document.getElementById("slides_1").style.marginTop = "60px";
+              }
+              
+    });
+
+
+
+
+
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: false,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 5,
+                $SpacingX: 0,
+                $SpacingY: 0,
+                $Align: 330
+              }
+
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            /*function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);*/
+            //responsive code end
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="detail_view/css/jquery.fullPage.css" />
+<!--     <link rel="stylesheet" type="text/css" href="detail_view/css/examples.css" />
+
+    <link rel="stylesheet" href="detail_view/bootstrap/css/bootstrap.min.css"> -->
+  <script src="detail_view/bootstrap/js/jquery.min.js"></script>
+  <script src="detail_view/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="detail_view/css/portfolio.css">
+
+ 
+
+ 
+
+    <script src="detail_view/js/jquery.min.js"></script>
+    <script src="detail_view/js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="detail_view/js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="detail_view/js/examples.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['white', 'white', 'white', 'white', 'white','white','white'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage','portfolio','6thpage'],
+                menu: '.menu',
+                scrollingSpeed: 800
+            });
+
+        });
+    </script>
+
+
+
   <style type="text/css">
   .mdl-cell {
   box-sizing: border-box;
@@ -59,16 +170,15 @@ table{
 
 }
 th{
-	background-color: #E0E0E0;
-	border-right: 1px solid #C0C0C0;
-
+	background-color: red;
+	border-right: 1px solid white;
 
 }
 td{
 	/*border-bottom:1px solid #E8E8E8;*/
 }
 button{
-	color:white ;
+	color:red ;
 
 }
 .button1{
@@ -123,7 +233,9 @@ button{
             <div class="mdl-grid" style="margin-top:20px">
               
               <div class="mdl-cell mdl-cell--4-col first">
+               <button id="show-dialog" style="width:420px;height:250px" type="button" class="mdl-button">
                 <img id="img1" src="apartments.jpg"></img>
+               </button>
               </div>
               
               <div class="mdl-cell mdl-cell--6-col first">
@@ -222,11 +334,207 @@ button{
       </div>
 
 
+<!-- <button id="show-dialog" type="button" class="mdl-button">Show Dialog</button> -->
+  <dialog class="mdl-dialog">
+
+
+
+
+
+
+
+
+    <h4 style="color:red;font-size:14px;margin-top:-10px" class="mdl-dialog__title close">X</h4>
+   <!--  <div class="mdl-dialog__content">
+      <p>
+        Allowing us to collect data will let us get you the information you want faster.
+      </p>
+    </div> -->
+
+    <div class="mdl-dialog__actions">
+      <button style="text-color:red;font-size:8px;position:relative;" type="button" class="mdl-button close">X</button>
+    </div>
+
+
+    <div id="jssor_1" style="position: relative; margin-top:-80px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <!-- <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('/theme/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div> -->
+    
+
+        <div data-u="slides" id="slides_1" style="cursor: default; position: relative; margin-left:-20px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black;">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building1.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building1.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building2.jpg"></img>
+                        
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building2.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building3.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building3.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                      <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building4.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building4.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building5.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building5.jpg" />
+            </div>
+
+
+
+
+
+           <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black;">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building1.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building1.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building2.jpg"></img>
+                        
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building2.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building3.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building3.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                      <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building4.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building4.jpg" />
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <div data-u="image" style="background-color:black">
+                    <div class="row" style="text-align:center">
+                        <img style="object-fit:contain;width:700px;height:700px" src="detail_view/images/building5.jpg"></img>
+                    </div>
+                </div>
+                <img data-u="thumb" src="detail_view/images/building5.jpg" />
+            </div>
+
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div u="thumbnavigator" class="jssort03" id="jssort_3" style="margin-left:-8px !important;position:absolute;bottom:20px;width:900px;height:60px;background-color:black" data-autocenter="1">
+            <div style="filter:alpha(opacity=30.0); opacity:0.3;"></div>
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides" style="cursor: default;">
+                <div u="prototype" class="p">
+                    <div class="w">
+                        <div u="thumbnailtemplate" style="object-fit:contain;" class="t"></div>
+                    </div>
+                    <div class="c" style=""></div>
+                </div>
+
+            </div>
+            <!-- Thumbnail Item Skin End -->
+
+
+                <!-- Arrow Navigator -->
+                <img data-u="arrowleft" class="jssora02l" src="detail_view/images/left-arrow.png" style="object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
+                <img data-u="arrowright" class="jssora02r" src="detail_view/images/right_arrow.png" style="object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
+                
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Agree</button>
+      <button type="button" class="mdl-button close">Disagree</button>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+
+
         </div>
       </main>
     </div>
 
 
-    
+
+
+
   </body>
 </html>
