@@ -1,0 +1,187 @@
+
+        /* jssor slider arrow navigator skin 02 css */
+        /*
+        .jssora02l                  (normal)
+        .jssora02r                  (normal)
+        .jssora02l:hover            (normal mouseover)
+        .jssora02r:hover            (normal mouseover)
+        .jssora02l.jssora02ldn      (mousedown)
+        .jssora02r.jssora02rdn      (mousedown)
+        */
+        .jssora02l{
+            display: block;
+            /*position: absolute;*/
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+           /* background: url('/theme/img/a02.png') no-repeat;*/
+            overflow: hidden;
+        }
+        .jssora02r {
+            display: block;
+            /*position: absolute;*/
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+           /* background: url('/theme/img/a02.png') no-repeat;*/
+            overflow: hidden;
+            margin-left: 842px;
+            margin-top:-51px;
+        }
+        /*.jssora02l { background-position: -3px -33px; }
+        .jssora02r { background-position: -63px -33px; }
+        .jssora02l:hover { background-position: -123px -33px; }
+        .jssora02r:hover { background-position: -183px -33px; }
+        .jssora02l.jssora02ldn { background-position: -3px -33px; }
+        .jssora02r.jssora02rdn { background-position: -63px -33px; }*/
+
+        /* jssor slider thumbnail navigator skin 03 css */
+        /*
+        .jssort03 .p            (normal)
+        .jssort03 .p:hover      (normal mouseover)
+        .jssort03 .pav          (active)
+        .jssort03 .pdn          (mousedown)
+        */
+        
+        .jssort03 .p {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 153px;
+            height: 38px;
+        }
+        
+        .jssort03 .t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .jssort03 .w, .jssort03 .pav:hover .w {
+            position: absolute;
+            width: 105px;
+            height: 38px;
+
+
+            /*border: white 1px dashed;*/
+            /*box-sizing: content-box;*/
+        }
+        
+        .jssort03 .pdn .w, .jssort03 .pav .w {
+            /*border-style: solid;*/
+        }
+        
+        .jssort03 .c {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 105px;
+            height: 38px;
+
+
+            /*background-color: white;
+
+        
+            filter: alpha(opacity=64);*/
+           /* opacity: .64;*/
+            /*transition: opacity .6s;
+            -moz-transition: opacity .6s;
+            -webkit-transition: opacity .6s;
+            -o-transition: opacity .6s;*/
+        }
+        
+        .jssort03 .p:hover .c, .jssort03 .pav .c {
+            /*filter: alpha(opacity=0);*/
+            /*opacity: 0;*/
+
+            /*border-bottom: 2px solid yellow;*/
+            
+
+            
+        }
+        
+        .jssort03 .p:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+
+        
+        * html .jssort03 .w {
+            width /**/: 62px;
+            height /**/: 32px;
+        }
+
+.light_blue{
+	border-top: 1px solid #1976D2;
+
+}
+.green{
+	border-top: 1px solid #2AB762;
+}
+.pink{
+	border-top: 1px solid #DD5B6F;
+}
+.dark_blue{
+	border-top: 1px solid #1976D2;
+}
+.white{
+	border-top: 1px solid white;
+}
+
+#img11{
+	position:absolute;
+	width:92px;
+	height:117px;
+	margin-top: 70px;
+	margin-left: 32px; 
+}
+
+.small{
+	width:100%;
+	height:100%;
+}
+.big{
+	/*border-top: 4px solid red;*/
+}
+.port1{
+	padding:10px 50px 10px 50px;
+	background-color:transparent;
+	border:none
+}
+button:focus{
+	outline:none;
+}
+button #prev1{
+	background-color: transparent;
+}
+button #next1{
+	background-color: transparent;
+}
+button #prev2{
+	background-color: transparent;
+}
+button #next2{
+	background-color: transparent;
+}
+
+@media (max-width: 1300px){
+	#img1,#img2,#img3,#img4,#img5{
+	    -webkit-transform:scale(1.20); /* Safari and Chrome */
+        -moz-transform:scale(1.20); /* Firefox */
+        -ms-transform:scale(1.20); /* IE 9 */
+        -o-transform:scale(1.20); /* Opera */
+    	transform:scale(1.20);
+	}
+	#prev1,#next1{
+		top: 82.5%;
+	}
+}
+
