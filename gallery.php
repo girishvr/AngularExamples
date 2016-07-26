@@ -118,6 +118,7 @@
 
 
   <style type="text/css">
+ @import url('css/fonts.css');
   .mdl-cell {
   box-sizing: border-box;
  /* background-color: #BDBDBD;*/
@@ -133,36 +134,42 @@
 	height:250px;
 	object-fit:fill !important;
 	width:420px;
-	margin-top: -1%;
+	margin-top: -0.7%;
+	margin-left: -4%;
 }
 h1{
 	font-size:17px;
-	color:gray;
+	color:black;
 	margin-top: -14px;
 	margin-left: -57px;
 	text-align: right !important;
+	font-family: Roboto-Medium;
 }
 h6{
 	font-size:12px;
-	color:gray;
+	color:black;
 	margin-top: -39px;
 	margin-left: 34px;
 	text-align: right !important;
+	font-family: Roboto-Medium;
 }
 h3{
 	font-size:14px;
 	margin-top: -33px;
-	color:gray;
+	color:black;
+	font-family: Roboto-Medium;
 }
 h2{
 	font-size:16px;
 	margin-top: -50px;
-	color:gray;
+	color:black;
+	font-family: Roboto-Medium;
 }
 h5{
 	font-size:12px;
 	margin-top: -70px;
-	color:gray;
+	color:black;
+	font-family: Roboto-Medium;
 }
 table{
 	margin-top: -70px;
@@ -172,13 +179,17 @@ table{
 th{
 	background-color: red;
 	border-right: 1px solid white;
+	font-family: Roboto-Medium;
 
 }
 td{
 	/*border-bottom:1px solid #E8E8E8;*/
+	font-family: Roboto-Medium;
+	color:black;
 }
 button{
 	color:red ;
+
 
 }
 .button1{
@@ -188,6 +199,23 @@ button{
     overflow:scroll;
     height:100px;
 }
+
+table {
+   /* width: 716px;*/ /* 140px * 5 column + 16px scrollbar width */
+    /*border-spacing: 0;*/
+}
+
+tbody, thead tr { display: block; }
+
+tbody {
+    height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+
   </style>
   </head>
  <body>
@@ -234,14 +262,14 @@ button{
               
               <div class="mdl-cell mdl-cell--4-col first">
                <button id="show-dialog" style="width:420px;height:250px" type="button" class="mdl-button">
-                <img id="img1" src="apartments.jpg"></img>
+                <img id="img1" src="images/apartments1.jpg"></img>
                </button>
               </div>
               
               <div class="mdl-cell mdl-cell--6-col first">
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--1-col">
-                  <img style="height:40px;width:40px;margin-top:-24px" src="heart.png"></img>
+                  <img style="height:40px;width:40px;margin-top:-24px" src="images/favorite.png"></img>
                   </div>
 
                   <div class="mdl-cell mdl-cell--11-col">
@@ -253,8 +281,11 @@ button{
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--1-col">
                   </div>
-                  <div class="mdl-cell mdl-cell--11-col">
-                  <h5>Rajarhat Kolkate</h5>
+                  <div class="mdl-cell mdl-cell--1-col">
+                  <img style="height:20px;width:20px;margin-top:-74px" src="images/location.png"></img>
+                  </div>
+				  <div class="mdl-cell mdl-cell--10-col">
+                  <h5 style="margin-left:-30px">Rajarhat Kolkate</h5>
                   </div>
                 </div>
 
@@ -264,10 +295,10 @@ button{
                 <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                   <thead>
                     <tr>
-                      <th class="mdl-data-table__cell--non-numeric">Property</th>
-                      <th>Size</th>
-                      <th>BSP</th>
-                      <th>New price</th>
+                      <th style="width:190px" class="mdl-data-table__cell--non-numeric">Property</th>
+                      <th style="width:120px" class="mdl-data-table__cell--non-numeric">Size</th>
+                      <th style="width:120px" class="mdl-data-table__cell--non-numeric">BSP</th>
+                      <th style="width:150px" class="mdl-data-table__cell--non-numeric">New price</th>
                     </tr>
                   </thead>
 
@@ -278,6 +309,7 @@ button{
                       <td>814.00 sq. ft</td>
                       <td>Rs. 2700/sq. ft</td>
                       <td>Rs. 21.98 Lacs</td>
+
                     </tr>
                     <tr>
                       <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
@@ -291,6 +323,47 @@ button{
                       <td>Rs. 2700/sq. ft</td>
                       <td>Rs. 22.55 Lacs</td>
                     </tr>
+
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
+                      <td>814.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 21.98 Lacs</td>
+
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
+                      <td>819.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 22.11 Lacs</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T</td>
+                      <td>895.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 22.55 Lacs</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
+                      <td>814.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 21.98 Lacs</td>
+
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T Flat/Apartments</td>
+                      <td>819.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 22.11 Lacs</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">2BHK 2T</td>
+                      <td>895.00 sq. ft</td>
+                      <td>Rs. 2700/sq. ft</td>
+                      <td>Rs. 22.55 Lacs</td>
+                    </tr>
+                    
                   </tbody>
                 </table>
             </div>
@@ -344,7 +417,9 @@ button{
 
 
 
-    <h4 style="color:red;font-size:14px;margin-top:-10px" class="mdl-dialog__title close">X</h4>
+  <!--   <h4 style="color:red;font-size:14px;margin-top:-10px" class="mdl-dialog__title close">X</h4> -->
+
+  <img src="images/clear_white_x.png" style="margin-top:-15px" class="mdl-dialog__title close"></img>
    <!--  <div class="mdl-dialog__content">
       <p>
         Allowing us to collect data will let us get you the information you want faster.
@@ -352,11 +427,13 @@ button{
     </div> -->
 
     <div class="mdl-dialog__actions">
-      <button style="text-color:red;font-size:8px;position:relative;" type="button" class="mdl-button close">X</button>
+      <button style="text-color:red;font-size:8px;position:relative;" type="button" class="mdl-button close">
+      	<img src="clear_white_x.png"></img>
+      </button>
     </div>
 
 
-    <div id="jssor_1" style="position: relative; margin-top:-80px; overflow: hidden; visibility: hidden;">
+    <div id="jssor_1" style="position: relative; margin-top:-61px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <!-- <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -479,8 +556,8 @@ button{
 
 
                 <!-- Arrow Navigator -->
-                <img data-u="arrowleft" class="jssora02l" src="detail_view/images/left-arrow.png" style="object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
-                <img data-u="arrowright" class="jssora02r" src="detail_view/images/right_arrow.png" style="object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
+                <img data-u="arrowleft" class="jssora02l" src="detail_view/images/left.png" style="object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
+                <img data-u="arrowright" class="jssora02r" src="detail_view/images/left.png" style="transform: rotate(180deg); object-fit:contain;width:55px;height:55px;" data-autocenter="2"></span>
                 
         </div>
 
